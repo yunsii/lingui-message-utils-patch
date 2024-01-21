@@ -1,0 +1,64 @@
+{
+  "name": "lingui-message-utils-patch",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    "./generateMessageId": {
+      "require": {
+        "types": "./dist/generateMessageId.d.cts",
+        "default": "./dist/generateMessageId.cjs"
+      },
+      "import": {
+        "types": "./dist/generateMessageId.d.mts",
+        "default": "./dist/generateMessageId.mjs"
+      }
+    },
+    "./compileMessage": {
+      "require": {
+        "types": "./dist/compileMessage.d.cts",
+        "default": "./dist/compileMessage.cjs"
+      },
+      "import": {
+        "types": "./dist/compileMessage.d.mts",
+        "default": "./dist/compileMessage.mjs"
+      }
+    }
+  },
+  "files": [
+    "README.md",
+    "dist/"
+  ],
+  "scripts": {
+    "build": "rimraf ./dist && unbuild",
+    "publish": "release-it",
+    "publish:beta": "release-it --preRelease=beta",
+    "release": "npm run build && npm run publish",
+    "release:beta": "npm run build && npm run publish:beta"
+  },
+  "author": "Yuns <yuns.xie@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yunsii/lingui-message-utils-patch.git"
+  },
+  "bugs": "https://github.com/yunsii/lingui-message-utils-patch/issues",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
+  "packageManager": "pnpm@8.14.1",
+  "peerDependencies": {
+    "@lingui/message-utils": "^4.0.0"
+  },
+  "devDependencies": {
+    "@lingui/message-utils": "^4.7.0",
+    "release-it": "^17.0.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  },
+  "dependencies": {
+    "js-sha256": "^0.10.1"
+  }
+}
