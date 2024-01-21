@@ -1,6 +1,6 @@
 {
   "name": "lingui-message-utils-patch",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.0",
   "description": "",
   "keywords": [],
   "sideEffects": false,
@@ -34,8 +34,10 @@
     "build": "rimraf ./dist && unbuild",
     "publish": "release-it",
     "publish:beta": "release-it --preRelease=beta",
+    "publish:dry-run": "release-it --dry-run",
     "release": "npm run build && npm run publish",
-    "release:beta": "npm run build && npm run publish:beta"
+    "release:beta": "npm run build && npm run publish:beta",
+    "release:dry-run": "npm run build && npm run publish:dry-run"
   },
   "author": "Yuns <yuns.xie@qq.com>",
   "repository": {
