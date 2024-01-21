@@ -1,1 +1,1 @@
-export * from "@lingui/message-utils/compileMessage";
+export * from '@lingui/message-utils/compileMessage'

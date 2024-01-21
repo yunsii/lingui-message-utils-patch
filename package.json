@@ -37,7 +37,8 @@
     "publish:dry-run": "release-it --dry-run",
     "release": "npm run build && npm run publish",
     "release:beta": "npm run build && npm run publish:beta",
-    "release:dry-run": "npm run build && npm run publish:dry-run"
+    "release:dry-run": "npm run build && npm run publish:dry-run",
+    "test": "vitest"
   },
   "author": "Yuns <yuns.xie@qq.com>",
   "repository": {
@@ -61,6 +62,7 @@
     "unbuild": "^2.0.0"
   },
   "dependencies": {
-    "js-sha256": "^0.10.1"
+    "js-sha256": "^0.10.1",
+    "vitest": "^1.2.1"
   }
 }
