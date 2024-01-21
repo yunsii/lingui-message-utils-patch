@@ -1,4 +1,4 @@
-# lingui-message-utils
+# lingui-message-utils-patch
 
 Make `@lingui/message-utils` generated id without `"/"`
 
