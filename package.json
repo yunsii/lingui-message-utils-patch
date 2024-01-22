@@ -51,19 +51,16 @@
     "access": "public"
   },
   "packageManager": "pnpm@8.14.1",
-  "peerDependencies": {
-    "@messageformat/parser": "^5.0.0",
-    "@lingui/message-utils": "^4.0.0"
-  },
   "devDependencies": {
     "@lingui/message-utils": "^4.7.0",
     "release-it": "^17.0.1",
     "rimraf": "^5.0.5",
     "typescript": "^5.3.3",
-    "unbuild": "^2.0.0"
+    "unbuild": "^2.0.0",
+    "vitest": "^1.2.1"
   },
   "dependencies": {
-    "js-sha256": "^0.10.1",
-    "vitest": "^1.2.1"
+    "@messageformat/parser": "^5.0.0",
+    "js-sha256": "^0.10.1"
   }
 }
