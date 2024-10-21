@@ -10,7 +10,7 @@ With pnpm [overrides](https://pnpm.io/package_json#pnpmoverrides):
 {
   "pnpm": {
     "overrides": {
-      "@lingui/message-utils@^4.0.0": "npm:lingui-message-utils-patch@0.0.1-beta.0"
+      "@lingui/message-utils@^4.0.0": "npm:lingui-message-utils-patch@0.0.1-beta.2"
     }
   },
 }
