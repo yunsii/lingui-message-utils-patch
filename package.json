@@ -1,7 +1,7 @@
 {
   "name": "lingui-message-utils-patch",
-  "version": "0.0.1-beta.2",
-  "description": "",
+  "version": "5.0.0-next.4",
+  "license": "MIT",
   "keywords": [],
   "sideEffects": false,
   "exports": {
@@ -26,41 +26,35 @@
       }
     }
   },
-  "files": [
-    "README.md",
-    "dist/"
-  ],
   "scripts": {
     "build": "rimraf ./dist && unbuild",
-    "publish": "release-it",
-    "publish:beta": "release-it --preRelease=beta",
-    "publish:dry-run": "release-it --dry-run",
-    "release": "npm run build && npm run publish",
-    "release:beta": "npm run build && npm run publish:beta",
-    "release:dry-run": "npm run build && npm run publish:dry-run",
-    "test": "vitest"
+    "stub": "unbuild --stub"
   },
-  "author": "Yuns <yuns.xie@qq.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yunsii/lingui-message-utils-patch.git"
+    "url": "https://github.com/lingui/js-lingui.git"
   },
-  "bugs": "https://github.com/yunsii/lingui-message-utils-patch/issues",
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org",
-    "access": "public"
+  "bugs": {
+    "url": "https://github.com/lingui/js-lingui/issues"
   },
-  "packageManager": "pnpm@8.14.1",
-  "devDependencies": {
-    "@lingui/message-utils": "^4.7.0",
-    "release-it": "^17.0.1",
-    "rimraf": "^5.0.5",
-    "typescript": "^5.3.3",
-    "unbuild": "^2.0.0",
-    "vitest": "^1.2.1"
+  "engines": {
+    "node": ">=20.0.0"
   },
+  "files": [
+    "README.md",
+    "dist/",
+    "compileMessage.js",
+    "generateMessageId.js"
+  ],
   "dependencies": {
     "@messageformat/parser": "^5.0.0",
     "js-sha256": "^0.10.1"
-  }
+  },
+  "devDependencies": {
+    "@types/node": "^22.9.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.6.3",
+    "unbuild": "2.0.0"
+  },
+  "packageManager": "pnpm@9.12.2"
 }

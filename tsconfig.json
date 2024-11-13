@@ -1,6 +1,25 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "moduleResolution": "Bundler"
-  }
+    "module": "commonjs",
+    "jsx": "react",
+    "noEmit": true,
+    "baseUrl": "./",
+    "pretty": true,
+    "esModuleInterop": true,
+    "stripInternal": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "target": "es2017",
+    "lib": ["ES2019"],
+    "strict": true,
+    "strictNullChecks": false
+  },
+  "exclude": [
+    "examples/**",
+    "dist",
+    "website",
+    "**/fixtures/**",
+    "**/__typetests__/**"
+  ]
 }
